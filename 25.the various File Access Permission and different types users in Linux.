@@ -1,0 +1,22 @@
+# Example: -rwxr-x--- (File)
+#          drwxrwx--x (Directory)
+
+# Breakdown:
+# - For files:    -rwxr-x---
+#   Owner:        rwx (read, write, execute)
+#   Group:        r-x (read, execute)
+#   Others:       --- (no permissions)
+
+# - For directories: drwxrwx--x
+#   Owner:        rwx (read, write, execute)
+#   Group:        rwx (read, write, execute)
+#   Others:       --x (execute)
+
+# Types of Users:
+# - Owner: The user who owns the file/directory.
+# - Group: A group of users to which the file/directory belongs.
+# - Others: All other users who are not the owner or part of the group.
+
+# Setting permissions:
+# chmod command is used to change permissions.
+# For example, chmod 754 file_name sets rwx for owner, r-x for group, and r-- for others.
